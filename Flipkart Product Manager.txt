@@ -1,0 +1,1506 @@
+
+so in today's scenario i want you to
+0:01
+imagine that um
+0:03
+we're working at flipkart and we're
+0:05
+noticing that there's a decline of about
+0:07
+15 of cart additions to the additions to
+0:11
+the shopping cart in the last three days
+0:13
+um can you help us diagnose the issue
+0:16
+[Music]
+0:19
+hey everyone we're here today to do
+0:21
+another product management
+0:22
+mock interview we're going to be
+0:24
+focusing on a root cause analysis type
+0:27
+question which are similar to execution
+0:29
+questions where you have to figure out
+0:30
+what's going wrong with a particular
+0:32
+issue i'm joined here today by kanjin
+0:34
+um go ahead and introduce yourself for
+0:36
+folks watching
+0:38
+hi everyone i'm khanjan i am currently a
+0:41
+product manager at razer pay which is a
+0:44
+fintech company in india and uh prior to
+0:47
+this i completed my postgraduate program
+0:50
+for the
+0:50
+from the indian school of business and
+0:52
+before that i was working at
+0:54
+for a couple of months at bain and
+0:56
+company and idea cellular which is one
+0:58
+of the leading
+0:59
+leading telecoms of india so that's
+1:02
+about me
+1:02
+and i'm super excited to be here today
+1:05
+awesome well we're excited to have you
+1:07
+too
+1:08
+um and so kanjin as mentioned we're
+1:10
+going to be going through
+1:11
+a root cause analysis question and so
+Question
+1:15
+i have a certain scenario that i'll
+1:17
+propose to you and then we're going to
+1:18
+talk about how
+1:19
+to actually go through that issue does
+1:21
+that make sense
+1:22
+awesome okay so in today's scenario i
+1:25
+want you to imagine
+1:26
+that um we're working at flipkart and
+1:29
+we're noticing that there's a decline of
+1:31
+about 15
+1:33
+of cart additions to the additions to
+1:35
+the shopping cart in the last three days
+1:37
+um can you help us diagnose the issue
+1:40
+uh sure so stephen before i jump into
+1:44
+uh sort of finding out what the problem
+1:46
+is uh just want to understand
+Clarifying questions
+1:48
+what do we define as cart additions here
+1:51
+so that we are on the same page got it
+1:53
+so cart editions are
+1:55
+let's imagine a user that's on the flip
+1:58
+cart experience
+1:59
+the flipkart app um they add an item to
+2:02
+their cart so they may click
+2:04
+and and their an item appears in their
+2:06
+shopping cart
+2:08
+sure also uh flipkart has both website
+2:12
+and mobile app
+2:13
+so are we looking at a generic 15
+2:16
+decline or has it been observed only on
+2:18
+the mobile or
+2:18
+app or the website we're noticing it
+2:21
+mostly on the mobile app experience
+2:24
+okay sure uh
+2:27
+so i will just take two minutes to sort
+2:30
+of make my
+2:31
+framework and think about flipkart in
+2:32
+general and uh
+2:34
+will then share the framework same
+2:36
+framework awesome
+2:37
+take your time
+2:41
+okay
+2:44
+yeah okay i'm ready uh so stephen now
+Factors
+2:48
+our first question is uh the card
+2:50
+additions that we are measuring
+2:52
+so it's sort of like a metric uh which
+2:54
+might be measured
+2:55
+using some analytics tool uh so have we
+2:59
+checked whether this analytics tool was
+3:01
+working well
+3:02
+over the last three days yeah that's a
+3:04
+great
+3:05
+yeah that's a great question so um we
+3:09
+talked to the analytics team we want to
+3:10
+make sure that this data is correct or
+3:12
+right
+3:13
+um and it does seem like the data coming
+3:15
+through is
+3:16
+um good like there's no issues with
+3:19
+logging or analytics that have happened
+3:21
+in the last few days
+3:23
+okay so now that we have all of that
+3:25
+answered i will just share
+3:27
+briefly my outline of the framework that
+3:29
+i'm going to follow to arrive at the
+3:31
+root cause
+3:32
+uh so first i will look at the external
+3:35
+factors
+3:35
+which will involve uh note which will
+3:38
+involve uh getting information
+3:40
+on what competitors uh have done in the
+3:43
+last three days has there been any
+3:45
+product launch or
+3:46
+has there been any new announcement
+3:48
+which might have taken away
+3:49
+a certain uh customer base or certain
+3:53
+uh product uh so which might have taken
+3:56
+away certain customer base from flipkart
+3:59
+second we look at the demographic
+4:02
+feature so has it
+4:03
+affected any particular customer segment
+4:06
+or any particular demographic feature of
+4:10
+that particular
+4:11
+customer segment third we look at the
+4:14
+macro economic feature
+4:16
+macro economic changes so has there been
+4:18
+any news or any
+4:20
+seasonality impact or any kind of
+4:23
+uh pattern in the external factors which
+4:28
+which might impact the overall
+4:30
+purchasing behavior
+4:33
+um fourth would be what are the
+4:36
+internal changes that we have done so
+4:38
+have we made any updates in the mobile
+4:40
+app
+4:40
+have we made any design changes etc
+4:43
+um then will be the overall journey of
+4:47
+the user
+4:48
+on the mobile app because we are closing
+4:51
+it down on the mobile app so we will see
+4:52
+all the steps of the user journey and
+4:54
+we'll
+4:55
+see if any particular point before the
+4:58
+cart auditions has experienced
+4:59
+any glitch or bugs so we'll basically
+5:02
+look at any incidents that have come up
+5:05
+uh and if none of this is the reason
+5:08
+then we might look at certain uh
+5:11
+certain factors which are out of control
+5:13
+but which still might impact
+5:16
+the overall purchasing behavior uh so
+5:19
+does that look good to you
+5:20
+yeah that sounds great thanks for laying
+5:22
+it all out sure
+5:24
+so as i mentioned so the first question
+5:27
+is uh
+5:28
+uh in india especially flipkart uh has a
+5:31
+couple of
+5:31
+e-commerce giants as competition and
+5:35
+so have has there been any new
+5:37
+announcement or entry of any competitor
+5:40
+or any kind of a product launch
+5:43
+or a big billion sale or uh sorry big
+5:46
+billion sales for flipkart so any sale
+5:48
+that has been announced
+5:50
+yeah that's a great question so we want
+5:52
+to see if there's a competitor
+5:54
+um we have limited knowledge here at
+5:56
+flipkart so we don't fully know
+5:58
+um what the competitors are doing from a
+5:59
+cursory perspective or looking at social
+6:02
+media profiles things like that we're
+6:03
+not seeing anything in particular
+6:05
+um but there it's not entirely clear
+6:08
+there could be some detailed targeting
+6:10
+or some
+6:10
+you know customized um campaigns that
+6:13
+we're not
+6:14
+visible to or not visible to us
+6:17
+i see okay uh so uh also
+6:20
+have we observed if this has impacted
+6:23
+customers from a certain city or a
+6:26
+region uh so is there any impact of
+6:29
+location
+6:29
+on this particular decline we're not
+6:32
+seeing an impact of location on the
+6:34
+decline so when we look at the location
+6:35
+we're seeing a spread across many
+6:37
+different places
+6:38
+okay great uh also has any particular
+6:42
+segment been impacted so let's say
+6:44
+females of age 20 to 30 who were earlier
+6:47
+purchasing a lot of cosmetics have
+6:49
+suddenly not started so suddenly stop
+6:51
+purchasing that
+6:52
+or is it again a uniform distribution
+6:55
+yeah so um we can look at some basic uh
+6:59
+factors like gender age location
+7:02
+and we're not seeing a deviation for any
+7:04
+of those sort of big demographic
+7:06
+categories that we typically look at
+7:07
+okay
+7:08
+thanks for clarifying that uh so now we
+7:11
+will look at
+7:12
+what flipkart has been doing um so has
+7:15
+a flipkart announced any campaign or any
+7:19
+uh other let's say prop product or any
+7:23
+other
+7:24
+um uh sort of a subsidiary which might
+7:28
+have taken
+7:29
+attention away from the mobile app
+7:33
+um we definitely launch campaigns all
+7:35
+the time
+7:36
+um it's not clear that any one of these
+7:39
+campaigns would be
+7:40
+taking users away from the mobile app or
+7:43
+there'd be any detriment to the mobile
+7:44
+app but we do have campaigns running
+7:46
+um is there something specific that
+7:48
+you're hoping to get with
+7:50
+with that or right so how i would look
+7:52
+at this
+7:53
+is uh considering that we don't see any
+7:56
+pattern in the demographics and the
+7:58
+geography
+7:59
+we would first look at the products uh
+8:02
+if there is any pattern in the kind of
+8:04
+products which have seen a decline in
+8:05
+card editions and
+8:07
+if we can identify that if there is a
+8:09
+pattern
+8:10
+or if there is even a pattern among the
+8:13
+categories then we can look at the
+8:14
+campaigns which
+8:15
+were running for those particular
+8:17
+categories and products
+8:19
+and then we can sort of attribute the
+8:21
+decline to that so
+8:23
+do you have any information on that
+8:26
+right
+8:26
+um so we when we look at the campaign
+8:29
+data and things like that we're not it
+8:31
+doesn't seem like there's a correlation
+8:33
+to a decline in the mobile app
+8:34
+experience
+8:35
+sure okay uh so then i'll move ahead
+8:38
+with the
+8:38
+technical parts of it uh so uh
+8:42
+as uh so just to summarize for everyone
+8:44
+who's doing this uh
+8:46
+when the customer will open flipkart or
+8:49
+launch the flipkart app on their mobiles
+8:52
+uh if they have
+8:53
+already signed in to the app then they
+8:55
+will directly see their home page
+8:57
+uh so the first thing that they will see
+9:00
+is the home page
+9:01
+versus if they are going to sign in for
+9:03
+the first time the first
+9:04
+screen that they will see is the login
+9:06
+screen versus if they are a new user
+9:09
+they would see a sign up screen so
+9:12
+this will be the first touch point for
+9:14
+the customer so
+9:15
+the next thing that i would want to know
+9:17
+is have there been any upgrades to the
+9:20
+mobile app in the last three days
+9:22
+on both ios and android yes there
+9:25
+actually has been we've done a major
+9:27
+update in the last
+9:28
+few days um to the mobile apps
+9:32
+okay and uh are these updates uh
+9:36
+related to anything uh in the cart
+9:39
+edition
+9:40
+uh touch cart audition milestone or
+9:44
+are they not at all related to that we
+9:47
+definitely
+9:47
+we've made some changes that affect the
+9:49
+whole shopping cart flow
+9:51
+so there definitely is a relationship
+9:52
+between the changes that we pushed
+9:54
+and the experience that we might be
+9:57
+serving to our users
+9:59
+okay so uh like can you be a little more
+10:02
+specific as in
+10:03
+uh have we made some design changes
+10:05
+which would maybe
+10:06
+increase the discovery of our products
+10:08
+or have we
+10:10
+offered an easier checkout journey
+10:14
+or have we enhanced the maybe or have
+10:18
+you changed the look and feel of the
+10:20
+add to cart buttons yeah so we have
+10:24
+improved the checkout flow um to make it
+10:26
+more seamless
+10:27
+in an effort to improve the conversion
+10:30
+rate on the checkout experience
+10:33
+right uh also uh have we observed if
+10:37
+this decline is only to ios
+10:39
+customers or only to android customers
+10:42
+uh we are seeing that a client only on
+10:45
+android customers
+10:47
+oh okay
+10:51
+right and uh have we received any
+10:53
+incidents or bugs report
+10:55
+uh on the uh app changes that have been
+10:58
+done
+10:59
+so uh from any kind of customers or uh
+11:03
+it's i mean we haven't received any uh
+11:05
+reports but we still think
+11:07
+that the upgrade might have done
+11:08
+something yeah we're not seeing
+11:11
+so many more reports especially since we
+11:13
+launched the experience maybe a few days
+11:14
+ago
+11:15
+but we are seeing an increase in some
+11:17
+bug reports um
+11:19
+and it seems like there's some bug
+11:21
+reports that people are having issues
+11:23
+paying or checking out their products
+11:26
+right
+11:26
+uh so now uh to go a little more deeper
+11:29
+into the issue
+11:30
+uh i feel that it is something to do
+11:32
+with
+11:33
+uh the process from right from uh seeing
+11:36
+the product and
+11:38
+uh finalizing the product to the
+11:41
+checkout process
+11:42
+uh but because we are observing a
+11:44
+decline in the cart
+11:46
+editions uh the first and the directly
+11:48
+attributable
+11:49
+uh feature to that would be the add to
+11:52
+cart
+11:53
+uh option so first point where the
+11:57
+customer would see that button is on the
+12:00
+product listing page so it does not
+12:03
+necessarily have to be
+12:04
+uh specifically the page of that product
+12:07
+but it will be like a generic listing
+12:09
+uh so is the button visible there for
+12:12
+all the products
+12:14
+um the button so you're asking if the
+12:17
+button is visible for all the products
+12:19
+for the set of users
+12:20
+um we can spin up a dev version and kind
+12:22
+of take a look at it
+12:24
+and it does look like the button is
+12:26
+visible to us
+12:27
+we're not totally sure if there are
+12:29
+other versions where the button might
+12:30
+not be visible but as far as we can tell
+12:32
+it seems like the button
+12:34
+is visible on the platforms that we're
+12:36
+looking at
+12:38
+okay and uh once the again so
+12:41
+now it comes to the journey from
+12:44
+seeing a a list of products to
+12:47
+selecting the particular product that
+12:49
+the customer wants to add to cart and
+12:52
+then clicking on the button
+12:53
+and then uh that particular action or
+12:56
+that particular
+12:57
+click to action translating that
+13:00
+particular
+13:01
+product to show in the customers cart so
+13:05
+what we need to do is we need to observe
+13:06
+if this particular
+13:08
+flow is getting completed so uh
+13:11
+have we logged in the event data or have
+13:13
+we observed the events data wherein
+13:16
+the add to cart event is
+13:19
+uh transitioning into the actual product
+13:22
+adding being added in the card do we
+13:24
+have that information
+13:25
+yeah so when we take a look at the data
+13:27
+um we actually see that there's been no
+13:29
+cart additions
+13:30
+on android um in the past few days so
+13:33
+we're actually seeing a huge decline in
+13:35
+card editions on that specific
+13:37
+version of android that we've launched
+13:38
+uh version of the app on android
+13:41
+right so uh then steven i feel uh
+13:44
+that because we are not
+13:47
+noticing or we don't have any
+13:49
+attributable data
+13:50
+to the uh installs
+13:53
+of app as such um also the product
+13:57
+discovery or the product visibility
+14:00
+doesn't seem to be
+14:01
+an issue as well uh my bet would be on
+14:04
+the add to cart button
+14:06
+so we should probably uh do
+14:09
+a complete analysis on the
+14:13
+event flow for every customer on the
+14:16
+android app
+14:17
+to check how many customers are actually
+14:20
+clicking on the
+14:21
+add to cart button and not seeing or not
+14:24
+uh
+14:25
+or their products are not being added to
+14:26
+the cart
+14:28
+so that's where the issue seems to be
+14:30
+lying
+14:31
+yeah you totally got it um and i mean we
+14:34
+can go a little bit further into this
+14:36
+and talk about where exactly the issue
+14:37
+is or how we debug it
+14:39
+um but i think you sort of nailed it on
+14:41
+the head um maybe if you could just
+Summary
+14:42
+summarize one last time
+14:44
+for the viewers before we go to some
+14:46
+feedback and things like that
+14:47
+um of sort of your your journey through
+14:49
+this flow and
+14:51
+how you came to the answer that you came
+14:52
+to uh so
+14:54
+how one should see any problem
+14:58
+coming in any metric for a product or a
+15:00
+particular product feature is
+15:02
+that first we look at the external
+15:04
+reasons so
+15:06
+more often than not especially for
+15:08
+e-commerce websites
+15:10
+a lot of external factors such as
+15:12
+campaigns or competitions announcements
+15:14
+or the company's own announcements they
+15:17
+lead to
+15:17
+a shift in trend for the customers
+15:21
+and that may lead to a certain segment
+15:24
+of customers not
+15:25
+actually adding things to the cart or
+15:28
+not actually looking at purchasing at
+15:31
+that particular point in time
+15:33
+so considering that we were looking at a
+15:34
+three-day window
+15:36
+i had to sort of understand if and it's
+15:39
+a big window so i had to understand if
+15:41
+in those three days uh any such
+15:43
+announcement from the competition or any
+15:45
+such new product launch from the
+15:46
+competition
+15:47
+was affecting the card editions on
+15:50
+flipkart
+15:51
+once that was out of the way uh we look
+15:53
+at which particular
+15:55
+location or segment of customers have
+15:58
+been impacted if
+15:59
+at all there is uh there is an
+16:01
+identifiable pattern in that
+16:03
+then we can directly attribute that to
+16:06
+the shift in
+16:07
+maybe the purchasing power or the
+16:10
+uh the trends or the various uh factors
+16:14
+that may be contributing to the way they
+16:17
+uh come on flipkart and add products to
+16:19
+the card
+16:21
+once that is out of the way uh we look
+16:23
+at the
+16:24
+residence of that particular problem on
+16:26
+our ecosystem
+16:28
+so is it on the website or on the mobile
+16:31
+app or we
+16:31
+really don't have any data on that which
+16:33
+is a very unlikely scenario we usually
+16:36
+can attribute that very well from the
+16:38
+data so
+16:39
+here because we observed that it is
+16:41
+residing
+16:42
+in the mobile app and uh after a little
+16:45
+more probing
+16:46
+uh we also found out that it is on the
+16:48
+android
+16:49
+uh play store itself so the android
+16:51
+version is facing the problems
+16:53
+uh we surely know that it is not uh
+16:57
+attributable to any change in the
+16:59
+external factors and it is rather
+17:01
+something that is internal to flipkart
+17:03
+so once we know that it is an internal
+17:05
+problem we start looking at the
+17:07
+funnel and the conversion from each step
+17:10
+in the funnel so right from the installs
+17:13
+to the sign
+17:14
+ups to the product discovery to the
+17:17
+visibility of the various buttons on the
+17:19
+product listing page
+17:21
+to the clickability of the particular
+17:24
+buttons
+17:24
+and then we identify how many clicks
+17:27
+have actually resulted
+17:28
+in the action to get completed
+17:32
+so in this case uh that was our best bet
+17:35
+because
+17:35
+before that we didn't find any problem
+17:38
+so
+17:38
+that's how i arrived at the final uh
+17:41
+answer that this might be the actual
+17:43
+root cause of the
+17:44
+cart edition so declining by 15
+17:48
+awesome um well kanji that was awesome
+17:50
+to see you go through that
+17:52
+i wrote a bunch of notes about what i
+17:53
+thought you did really well um but
+17:55
+before we jump into it we'd love to hear
+17:56
+a self-reflection what do you think went
+17:58
+well about that interview what do you
+18:00
+think
+18:00
+didn't or would you change if you can go
+18:02
+back and then i can jump into some
+18:04
+feedback
+18:05
+and we can talk generally yeah so
+18:08
+uh first so first i'll talk about the
+18:11
+areas of improvement that i feel i
+18:13
+should have done better
+18:15
+or i could have done better the first
+18:17
+one being
+18:18
+when i asked you about the website and
+18:20
+the mobile app
+18:23
+issue so where exactly the cart editions
+18:26
+were observed and you did tell me that
+18:28
+it was in the mobile app i should have
+18:30
+asked you a bit more about
+18:31
+where or which versions of mobile app or
+18:35
+which play store uh was this particular
+18:38
+issue happening on or which particular
+18:40
+device type or this
+18:42
+issue was happening on uh that answer
+18:44
+would have given me a much better
+18:46
+visibility
+18:47
+into uh the funnel so i could have
+18:50
+understood that because it's
+18:51
+on android and not apple i could have
+18:54
+understood that it is something
+18:56
+which is a bug issue and not exactly
+18:59
+a customer side of an issue or a or an
+19:02
+external issue
+19:04
+so that's one and second is uh because
+19:07
+it's a root cause analysis
+19:08
+uh or it might have been the case that
+19:12
+uh i should have probably asked for a
+19:14
+little more data
+19:16
+so in terms of the numbers so in the
+19:18
+real world i would have
+19:20
+probably just gone on my analytics
+19:23
+board and i would have asked for a lot
+19:25
+more data uh so that is another thing
+19:27
+that i could have improved on
+19:28
+um in terms of what i did good i think
+19:31
+uh
+19:32
+the framework uh that i made however it
+19:35
+might have
+19:35
+not been it might not have been required
+19:40
+to look at so many factors but
+19:42
+if you develop a habit of looking at
+19:44
+everything
+19:45
+from a 360 degree view then you don't
+19:48
+tend to miss out on things and
+19:49
+it becomes like a general way of solving
+19:52
+things
+19:52
+which as a pm i feel helps a lot in the
+19:55
+longer run
+19:56
+um so that is what i think i did good
+20:01
+totally yeah um definitely agree with
+20:04
+you i mean overall i thought this was a
+Interview analysis
+20:06
+really smooth excellent answer of a root
+20:08
+cause analysis question
+20:10
+um they can get very scary and hairy
+20:12
+because you don't know
+20:14
+where to go with it and it feels very
+20:16
+intimidating um
+20:17
+like oh is this the right direction or
+20:19
+is that the right direction etc etc and
+20:21
+i thought you handled that very well
+20:22
+and what i really loved about your
+20:24
+answer is in the beginning you sort of
+20:25
+started off with a full framework of
+20:27
+okay these are the ways that i'm going
+20:29
+to go about this problem um
+20:30
+i'm going to think about it like um
+20:33
+through this and then this and then this
+20:34
+and then this
+20:35
+um and and kind of go through that and i
+20:38
+definitely did wish we
+20:39
+came back to that in the in the middle
+20:40
+or if there was a white board
+20:42
+or something like that it could be
+20:43
+really helpful because then um
+20:45
+i could really see like okay hey like
+20:47
+this is where
+20:48
+um this is where that issue
+20:51
+was or something and like therefore
+20:53
+we've eliminated this hypothesis or
+20:55
+something like that
+20:56
+um i also um i i thought you don't know
+21:00
+the the going back to the hypothesis was
+21:03
+really
+21:04
+you did this a couple times or you
+21:05
+summarized or you were like okay this is
+21:06
+now
+21:07
+where i think i am or this is now what
+21:08
+we're going to do um i thought that was
+21:10
+especially great when you did that with
+21:12
+the
+21:12
+cart analysis we're like okay now let's
+21:14
+just really dive into the flow and look
+21:16
+at the flow
+21:16
+and see where the issue is in the flow i
+21:18
+thought that was really effective too
+21:20
+um i i one thing that um i
+21:23
+wanted to call out that um you know i
+21:26
+hope you don't mind sharing but
+21:27
+or that i share with the audience is um
+21:30
+there's a thing that a lot of
+21:32
+interviewees do and it's called
+21:34
+up speaking um i don't know if you're
+21:35
+familiar but it's it's sort of when at
+21:37
+the end of your sentence you go up
+21:39
+like answering it like a question um
+21:42
+kind of at the end
+21:42
+of things and i think um that was one
+21:45
+piece of feedback i did notice is that
+21:46
+you did that a couple times throughout
+21:48
+the interview
+21:48
+um and it took away from the confidence
+21:50
+and the gravitas of what you were saying
+21:52
+um and it's a hard habit sometimes i do
+21:55
+it too actually when i answer interview
+21:56
+questions
+21:57
+but i just thought it'd be helpful to
+21:59
+share to the audience as well um that
+22:01
+it's something just to watch for when
+22:02
+you watch recordings of yourself doing
+22:04
+interviews or
+22:05
+um especially at exponent we always
+22:07
+really recommend people record
+22:08
+themselves and watch themselves because
+22:10
+then you see all the flaws the
+22:12
+sort of tough things but that's just one
+22:14
+common behavior interviews
+22:15
+um that always can can make you sound a
+22:17
+little bit more confident a little bit
+22:19
+more
+22:19
+um sort of like uh steady in your answer
+22:22
+um any reactions thoughts comments to
+22:24
+any of the feedback i just shared
+22:26
+uh no i think yeah a very fair point so
+22:28
+i'd like to add on that
+22:30
+uh the way uh a lot of uh
+22:33
+your pm interview also depends on the
+22:35
+confidence and the
+22:36
+smoothness with which you approach the
+22:38
+question because
+22:40
+it tends to get very intimidating in the
+22:42
+real world scenario
+22:44
+for example i remember when i was
+22:45
+interviewing for the companies last year
+22:48
+uh in 30 minutes we were expected to
+22:51
+solve all
+22:52
+at least two interview at least two
+22:53
+cases and
+22:55
+uh if you don't have a control on
+22:58
+how you are speaking and what you are
+22:59
+speaking and not writing it
+23:01
+at the same time and showing it to the
+23:03
+interviewer the interviewer might just
+23:05
+lose
+23:06
+track of what you're doing and that can
+23:08
+cost you a lot so
+23:09
+a very fair point totally
+23:12
+um yeah and actually i mean to sort of
+23:15
+close or wrap toward the end of this
+23:17
+conversation
+23:18
+um if folks want to learn more you can
+23:21
+always check out exponent
+23:22
+at tryexponent.com we help people land
+23:25
+their dream tech
+23:26
+job with our courses our coaching and
+23:28
+our vibrant community
+23:29
+we believe that people shouldn't
+23:31
+interview alone the reason i bring this
+23:33
+up now is that
+23:34
+part of exponent's mission is to help
+23:35
+people practice better and there have
+23:37
+been studies to show that
+23:38
+practicing for interviews just getting
+23:40
+those reps in can go a long way towards
+23:42
+building that confidence
+23:43
+and getting that um type of interview
+23:46
+that you want to see
+23:47
+in the interview to succeed um and so um
+23:50
+i did want to just
+23:51
+mention that about exponent but before
+23:54
+we close conjunct do you have any ask
+23:55
+last thoughts tips um anything else you
+Tips
+23:58
+wanted to share with folks watching
+24:00
+yeah so firstly i would like to top your
+24:03
+closing comment that i have
+24:05
+in fact prepared a lot of my product
+24:08
+cases
+24:09
+watching exponent mock interviews uh so
+24:12
+definitely
+24:13
+that's one tip that i can give that any
+24:16
+any mock interviews
+24:17
+will help you get a sense of what kind
+24:20
+of questions can come up and
+24:22
+how should you hold the conversation
+24:24
+during a product management interview
+24:27
+uh again continuing on that point uh
+24:29
+what happens is
+24:31
+that a lot of people feel that because
+24:33
+it's a product case
+24:34
+you in order to show that you know
+24:37
+everything and that you're an expert
+24:39
+people don't make conversation and they
+24:41
+forget to ask questions or they forget
+24:43
+to course correct themselves
+24:45
+during the process and hence they get so
+24:47
+lost in their own
+24:49
+uh points that it just leads to a very
+24:52
+jumbled up
+24:53
+solution so yeah that would be my final
+24:56
+uh comment and lastly for any
+24:59
+help on product cases uh one should
+25:03
+always refer to
+25:04
+uh or one should always fall back on
+25:06
+actual practice
+25:07
+so you will have your peers or your
+25:10
+family members or your cousins friends
+25:12
+whoever you can find
+25:14
+just speaking to them and just telling
+25:17
+them to be
+25:18
+your interviewer will give you a lot of
+25:20
+confidence which
+25:21
+will help you in the actual scenario
+25:25
+awesome um and if you're looking to
+25:27
+learn more about kanjin we'll put a link
+25:30
+to her youtube channel in the
+25:31
+description below
+25:32
+um we really appreciate kanjin taking
+25:34
+the time
+25:35
+and for those of you watching if you
+25:37
+have any comments or questions
+25:39
+now is the time we'll try to answer
+25:41
+every single one of them
+25:43
+um just comment below in the video and
+25:45
+hit that like and subscribe button
+25:47
+as well if you thought this video was
+25:48
+valuable um
+25:50
+again thank you so much for joining and
+25:53
+good luck
+25:53
+on your upcoming interview
+25:56
+[Music]

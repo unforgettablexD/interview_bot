@@ -1,0 +1,1657 @@
+you're the pm for facebook lite how
+0:02
+would you set goals
+0:03
+[Music]
+0:06
+hey everyone uh we're here today to do
+0:09
+another
+0:10
+exponent mock interview we're going to
+0:12
+be doing a product management interview
+0:14
+with abed
+0:15
+um abed first can you just introduce
+0:17
+yourself for everyone
+0:18
+hey thank you for having me um so my
+0:20
+name is albert i'm an incoming product
+0:22
+manager at facebook
+0:24
+i was actually a client of exponent and
+0:26
+it was really helpful for me
+0:28
+before that i was at kareem karim is a
+0:32
+ride-hailing and the super app of the
+0:33
+middle east region
+0:34
+and it was acquired by uber i think last
+0:37
+year
+0:38
+and before that i worked on different
+0:39
+startups in different industries
+0:42
+in the middle east region awesome well
+0:44
+we're super excited to have you all bet
+0:45
+and
+0:46
+it's so cool to hear that exponent has
+0:47
+worked well for you for those of you
+0:49
+watching if you want to learn more about
+0:50
+exponents courses
+0:52
+coaching and community you can go to try
+0:54
+exponent dot com
+0:55
+um now i want to jump into this facebook
+0:58
+uh pm
+0:59
+interview we're going to be doing an
+1:00
+execution style interview so it's going
+1:02
+to be focused more on analytical type
+1:04
+uh things like that and abed should be a
+1:06
+pro given that he just went through
+1:07
+the interview process um and so the
+Question
+1:10
+question that i'd like to ask you today
+1:12
+about is you're the pm for facebook lite
+1:14
+how would you set goals
+1:17
+facebook lite great um
+1:21
+so just a couple of like
+1:24
+confirmations and questions that i would
+Clarifying questions
+1:27
+like to to kind of like um
+1:29
+um check with you so facebook lite
+1:32
+is basically the light version of
+1:35
+facebook where
+1:36
+it's catered to like developing
+1:39
+countries people with
+1:41
+um less powerful phones and
+1:44
+like in terms of limited connectivity
+1:46
+whether on the speed or the download
+1:48
+code
+1:48
+is that correct yes that's exactly right
+1:51
+we use light
+1:52
+to help people of all bandwidth access
+1:55
+access facebook
+1:56
+in the experiences and i think my my
+1:59
+other question is that
+2:00
+um i'm going to set the goals for
+2:03
+today not assuming that i'm going back
+2:06
+in time with facebook launched like
+2:08
+is that correct that's right yeah we're
+2:10
+focusing looking forward for the goals
+2:12
+um how would we set up the goals but not
+2:14
+backwards cool cool cool um so just give
+2:17
+me a second to kind of
+2:19
+um articulate the mission um if that's
+2:21
+okay
+2:22
+that sounds great um and in the meantime
+2:24
+for those of you watching
+2:25
+please do like and subscribe if you like
+2:28
+this type of content and want to see
+2:30
+more of it
+2:31
+every single like and subscribe helps us
+2:33
+uh encourages us to make sure that this
+2:35
+content is valuable for you
+2:37
+and that we will make more of it so
+2:39
+please do share your feedback and
+2:41
+thoughts
+2:41
+and even comments below if you have any
+2:44
+questions
+2:45
+we try to answer every single question
+2:46
+that's asked
+2:50
+great so the the mission uh for facebook
+Mission
+2:53
+is to
+2:54
+um give the people to the tools to um to
+2:58
+connect and kind of like bring the word
+3:01
+closer together
+3:03
+and my understanding or the way i see
+3:06
+facebook live
+3:07
+is at the code of that mission because
+3:10
+if you think about it facebook light is
+3:12
+trying to connect
+3:13
+the people who are kind of like in
+3:16
+slightly underprivileged
+3:17
+circumstances and i think um facebook
+3:20
+being a champion for
+3:22
+um inclusivity um and just ensuring that
+3:26
+everyone is served with
+3:27
+that service uh is is
+3:30
+being kind of like the code of the
+3:32
+mission and facebook being true to this
+3:34
+to its mission
+3:35
+i think it's it's a it's uh one of the
+3:38
+key pillars to kind of like
+3:39
+bring on board the people who are in
+3:42
+developed countries with
+3:43
+uh certain technology limitations
+3:46
+so that's where i feel light is quite
+3:49
+important
+3:50
+and it's it's actually one of the most
+3:52
+important things
+3:54
+giving that that
+3:57
+facebook adoption kind of saturated and
+4:00
+in the developed world in the developed
+4:02
+countries and if facebook needs to grow
+4:04
+then
+4:05
+kind of needs to to get more users on
+4:08
+board
+4:08
+and i think those users are in those um
+4:11
+developed countries sorry underdeveloped
+4:15
+countries or developing countries
+4:17
+so if facebook wants to bring the next
+4:20
+billion users i think light could be one
+4:23
+of the strategies
+4:24
+different strategies could be um the
+Strategy
+4:28
+um the uh the drone that is beaming
+4:31
+internet or just like allowing more
+4:32
+access to different
+4:34
+areas so i think that could be one of
+4:36
+the strategies to bring
+4:37
+more users on board got it um now just
+4:40
+to
+4:41
+push back a little bit so uh yes we
+4:44
+could have the
+4:45
+goals of inclusivity which i love that
+4:47
+you started there
+4:48
+um but at what point do we know that
+4:51
+we're not
+4:52
+no longer providing the same facebook
+4:54
+experience so
+4:55
+i could imagine an argument being made
+4:57
+like hey maybe facebook should be
+4:59
+we can print the newsfeed on newspapers
+5:01
+um and we can put the news feed on
+5:02
+newspapers we can distribute them to
+5:04
+like all of people around the world but
+5:07
+i might be worried about that because
+5:09
+it's not really providing the same
+5:11
+experience
+5:11
+as what facebook is known to provide or
+5:14
+you know
+5:14
+it's not the same thing so how would you
+5:16
+think about whether or not light
+5:18
+falls into that category of kind of
+5:20
+being more like a newspaper
+5:21
+or less like the actual facebook
+5:23
+experience and trading that off with
+5:25
+inclusivity
+5:26
+great i think that's a great question
+5:28
+and it's a good um
+5:30
+like exercise to think about it the way
+5:32
+i think
+5:33
+about light is is pretty much
+5:37
+it's it's it's hoping to be
+5:40
+the cool experience of facebook and
+5:44
+i think most of us when we're using
+5:46
+facebook we're using some core
+5:47
+functionalities
+5:49
+maybe um looking up at
+5:52
+certain pictures or messaging people or
+5:54
+just like updating our status
+5:57
+so it's still connected to the same
+6:00
+facebook environment so you're not out
+6:01
+of the facebook environment
+6:03
+you're just contributing differently so
+6:05
+i think that's one way
+6:06
+the other thing for facebook lite it's
+6:10
+it's just probably a temporary solution
+6:14
+if you think about it the word is is
+6:16
+becoming
+6:17
+adopting to new technologies faster so
+6:20
+let's say there is a country that
+6:22
+doesn't have the support for
+6:24
+um broadband internet but this country
+6:27
+will get broadband internet next year
+6:29
+so you're kind of introducing them to
+6:30
+the facebook ecosystem and then
+6:32
+once they sort of like graduate to to
+6:36
+to become eligible for the full facebook
+6:38
+experience
+6:39
+um this is where they can use the uh the
+6:41
+normal app
+6:42
+so it's not a completely disconnected
+6:44
+experience it's just kind of i would say
+6:47
+more focused on the basic needs that you
+6:49
+would need
+6:50
+given the limitation of technology got
+6:54
+it
+6:54
+okay um great response and yeah i think
+6:56
+it sounds like what we want to do is go
+6:58
+ahead and focus on
+6:59
+facebook light as an on-ramp into the
+7:00
+facebook experience then also
+7:02
+facebook late should really represent
+7:04
+the core experience of facebook
+7:05
+and um i like that point as well and a
+7:07
+facebook newspaper
+7:09
+does not quite get at the core
+7:10
+experience of facebook although it could
+7:12
+be a pretty cool idea
+7:13
+um so okay so we so we have this mission
+7:16
+or kind of the high level
+7:17
+objectives but can we talk a little bit
+7:19
+more about what specific goals that we
+7:21
+would set for facebook light and how we
+7:22
+might go about
+7:23
+picking those goals um and and even like
+7:26
+would love a consideration at some point
+7:27
+in your answer about the tam or the
+7:29
+total adjustable market
+7:30
+that we might have here um without this
+7:32
+product
+7:33
+got it so i think at this point um
+7:36
+facebook lite has been there for years
+7:38
+so as a product it i would say it has
+7:42
+reached maturity in terms of like
+7:44
+product itself um but i think
+7:47
+the core mission of this product is
+7:50
+to ensure that we're really solving that
+7:52
+problem that we said we want to solve
+7:54
+which is connecting
+7:55
+the people who are um like have those
+7:58
+certain challenges
+7:59
+and for that i want to measure
+Success metric
+8:03
+my success as the pm in terms of the
+8:06
+the adoption rate for this app so
+8:09
+basically
+8:11
+looking at the number of people who are
+8:13
+using the app
+8:14
+um versus the total addressable market
+8:17
+that we have
+8:19
+so almost like everyone who needs the
+8:21
+app versus how much actually we're
+8:23
+supporting and how much we're
+8:24
+we're serving in this new app got it
+8:28
+so we're going to look at the um
+8:30
+leftover users or the users that may not
+8:32
+have access that we
+8:33
+should be able to access or provide that
+8:35
+experience
+8:36
+overall adoption of this facebook like
+8:39
+that got it
+8:42
+okay um that makes a lot of sense i
+8:45
+guess how would we think about
+8:47
+um why do you think people are not using
+8:50
+that or
+8:51
+what is the barriers to facebook like
+Barriers
+8:53
+that we want to address or focus on
+8:57
+okay so i think um
+9:01
+i think first of all the what's what's
+9:04
+unique about facebook and generally all
+9:06
+the social networks is that
+9:08
+this network effect where you need your
+9:11
+friends to be on facebook to kind of
+9:13
+like be motivated to be on facebook
+9:16
+so it's it's more or less like a
+9:19
+snowball effect where
+9:20
+you want to really advocate certain
+9:22
+cities
+9:23
+that who just maybe recently came online
+9:26
+or recently
+9:27
+started to get more people connected to
+9:29
+the internet or
+9:30
+certain devices so i think
+9:34
+one of the things we want to look at is
+9:37
+try to get more users on boarded on this
+9:40
+app
+9:40
+um i'm not sure maybe maybe it's it's
+9:43
+it's a
+9:44
+it's an education challenge of people
+9:46
+not knowing about facebook
+9:48
+but i think most of us back when
+9:50
+facebook launched we
+9:51
+knew about it through friends so once
+9:53
+your friends are there
+9:54
+you'll be there i mean it's just like
+9:56
+allowing access for
+9:58
+people who might not um have this um
+10:01
+like powerful smartphone etc
+10:04
+so the way i would i would look at this
+10:07
+is
+10:08
+basically trying to onboard these people
+10:10
+and the way i would look at the total
+10:12
+addressable market
+10:14
+is looking at everyone
+10:17
+with um with let's say a less powerful
+10:21
+phone
+10:22
+and this data i might get from the
+10:24
+manufacturers
+10:26
+um like number of ship devices etc
+10:29
+and when it comes to to the network
+10:32
+um and connectivity challenges
+10:36
+i'm gonna try to look some data from the
+10:38
+telcos um
+10:39
+if if the company can provide us with
+10:41
+this data
+10:42
+that would give us the estimated total
+10:44
+addressable market that we're gonna
+10:46
+benchmark our um numbers against
+10:50
+got it so we're gonna look at that to
+10:52
+kind of get the total adjustable market
+10:54
+it sounds like you know maybe the telco
+10:56
+it sounds like what we're gonna look at
+10:57
+is like the
+10:58
+bandwidth constraints on phones given
+11:01
+the different telcos
+11:02
+and the data that they have or the data
+11:03
+that we have with telcos
+11:05
+um so i think that makes a lot of sense
+11:08
+um and so we can kind of like understand
+11:10
+or tap into why
+11:12
+these users or how we can target these
+11:13
+users um
+11:15
+but i i do want to kind of come back to
+11:16
+the bigger question of the goals so like
+Goal
+11:18
+how can we
+11:19
+um what what exactly is our goal here
+11:22
+and how are we going to
+11:23
+achieve that goal or how what are the
+11:25
+the action steps for that goal
+11:27
+um with regards to the sector that we're
+11:29
+talking about great
+11:30
+great so i would say our goal is
+11:33
+to ensure that our adoption
+11:37
+is is is as good as it can be in terms
+11:42
+of
+11:42
+number of users who are using this app
+11:45
+and we're serving
+11:46
+in the proper way and this goal we can
+11:49
+define as i mentioned
+11:50
+basically the number of active users
+11:53
+monthly active users
+11:54
+divided by the total address of the
+11:56
+market so if this number is going up
+11:59
+then it means that we're actually i'm
+12:01
+getting closer and closer to our
+12:03
+um end goal um and
+12:06
+that's that's when we're talking about
+12:08
+the goal i think in terms of
+12:10
+steps talking about the product itself
+12:14
+um i think the product
+12:17
+has already proved that it's uh it's a
+12:20
+good solution
+12:21
+for many people so it's about growing
+12:23
+the base
+12:25
+and in terms of steps
+12:28
+as i mentioned i believe it's basically
+12:31
+about
+12:33
+allowing more people to use it and that
+12:35
+would give us the
+12:36
+snowball effect and the network effect
+12:38
+that more people will
+12:39
+come on board once their friends are on
+12:41
+board got it
+12:43
+um so i love this like now over tan
+12:45
+metrics the monthly active users over
+12:47
+the total adjustable market
+12:49
+um can you tell me like what's the
+12:51
+downside of that approach or that goal
+12:53
+basically like if we just focused on
+12:55
+that goal is there something that you
+12:56
+might be worried about or a trade-off
+Trade-offs
+12:58
+that we need to consider
+13:01
+um so i i think
+13:04
+one thing going back to uh to as you
+13:07
+mentioned the newspaper and what kind of
+13:09
+solutions that we want to
+13:11
+to bring um we shouldn't think about
+13:14
+the facebook light um in vacuum it's
+13:17
+it's actually quiet
+13:19
+connected to the normal app and
+13:22
+i think it's it's allowed to install
+13:24
+facebook light and the normal app
+13:26
+um in different countries so i think
+13:30
+one downside of just looking at now is
+13:33
+that basically
+13:35
+it's um it's it's mixed between the
+13:38
+people who are
+13:39
+um actually part of the tam people who
+13:42
+are
+13:43
+um on less powerful phones or connection
+13:46
+um
+13:47
+limitations with the people who are
+13:50
+not part of that group so maybe um
+13:53
+an iphone 11 user would download
+13:55
+facebook lite
+13:57
+maybe someone with a powerful android
+13:59
+phone or with good connection with
+14:01
+download
+14:01
+facebook live and that could skew our
+14:03
+numbers in terms of monthly active users
+14:06
+so we need to figure out a way um to
+14:09
+kind of like
+14:10
+remove that noise and focus on the
+14:12
+actual
+14:14
+um the daily monthly active users
+14:17
+that we care about that kind of like
+14:20
+they
+14:21
+they fit with with our um town
+14:24
+got it yeah that's a great point i i
+14:26
+think like the
+14:27
+um the considering
+14:30
+all the users that might interact with
+14:31
+the products is really important here
+14:33
+um so that's great um so it sounds like
+14:36
+you know just repeat us again so we're
+14:38
+kind of like ensuring that adoption is
+14:39
+as good as it can be um
+14:41
+for facebook and we've considered some
+14:43
+trade-offs we've considered the metrics
+14:45
+that we want to look at or evaluate
+14:46
+um i think one thing one question that i
+Follow-up questions
+14:49
+do have is like
+14:50
+um you know it sounds like we're gonna
+14:52
+partner with telcos and kind of
+14:53
+understand that
+14:54
+um do you think the main approach here
+14:57
+it sounds like there's
+14:58
+maybe two approaches i'd love to hear
+14:59
+which one you think is better one
+15:01
+approach is we can really
+15:02
+improve the product experience for
+15:04
+facebook light maybe make it more rich
+15:06
+make it more
+15:06
+like like uh powerful things like that
+15:09
+and um we could add more features into
+15:11
+it that are low bandwidth
+15:12
+for example let's say that we don't have
+15:14
+um you know as much as good animations
+15:16
+maybe we can make the animations better
+15:18
+for for light users
+15:19
+the other path we can go down is that we
+15:21
+can really just try to make
+15:23
+facebook light itself a lower bandwidth
+15:25
+product so
+15:26
+um like we can take let's say it takes
+15:28
+some number of megabits per second like
+15:30
+to download or to use we can reduce that
+15:32
+even further
+15:33
+um how would you consider these two
+15:35
+approaches when thinking about facebook
+15:37
+lite
+15:38
+because both seem to fit into the idea
+15:40
+of expanding access and assuring
+15:42
+adoption is as good as it can be
+15:44
+one making the product so excellent that
+15:46
+people are talking about it and sharing
+15:47
+with their friends
+15:48
+another making the bandwidth so low or
+15:51
+the
+15:51
+constraints um not a problem anymore so
+15:53
+that users can access it
+15:55
+uh more readily so how would you think
+15:57
+about these two paths for the product
+15:59
+i i think um given the situation that
+16:02
+we're
+16:02
+um that we're here now and today
+16:05
+situation
+16:06
+the product is mature and i think a lot
+16:09
+of
+16:09
+brilliant pms have worked on it and kind
+16:11
+of like really understood what the users
+16:14
+cared about
+16:15
+users who fit in this persona with those
+16:17
+limitations or and
+16:18
+those opportunities so what i believe is
+16:22
+that
+16:23
+there is a product market effect for
+16:25
+those people
+16:26
+it's just about scaling the product into
+16:29
+people who are
+16:31
+probably either not aware or people with
+16:34
+even like um different limitations
+16:38
+so we might assume that the limitation
+16:40
+is that you need
+16:42
+one megabit um connection maybe there
+16:45
+are people who are left out at
+16:47
+128 kilobyte like per second
+16:51
+so maybe on on the product innovation
+16:53
+side we need to
+16:55
+to understand first if we really need to
+16:57
+go and optimize
+16:59
+more um to capture a bigger market
+17:02
+my hypothesis for now i think
+17:05
+that is not the case i think it has been
+17:07
+optimized and there is a good product
+17:09
+market fit when it comes to how can we
+17:12
+make this product a greater success
+17:14
+um it is about how to scale the product
+17:17
+in
+17:18
+the hand of users um basically
+17:22
+trying to understand what cities have
+17:24
+not
+17:25
+yet developed this network effect of
+17:28
+facebook and how can we
+17:30
+tap into these communities
+17:33
+but from a feature perspective i think
+17:36
+the features
+17:37
+are quite a good representation of
+17:41
+what a typical facebook user would use
+17:45
+it's it's really a great thing to see
+17:48
+um it's it's not about what you add it's
+17:51
+not about what you cannot remove
+17:52
+so i think facebook light has has
+17:54
+reached that um
+17:56
+like fine fine line between those things
+17:59
+awesome um i want to ask one last
+18:01
+question before we kind of jump to
+18:02
+feedback and all that kind of stuff
+18:03
+um what so i want to take us so we're at
+18:06
+a very high level talking about goals
+18:07
+i want to take us to zoom in on a
+18:09
+certain city let's say that we've
+18:11
+discovered we've partnered with the
+18:12
+telcos we've discovered that there's a
+18:13
+city
+18:14
+that is um does not have facebook light
+18:17
+and
+18:17
+majority of usage maybe one percent of
+18:19
+the users use facebook lite
+18:20
+um and this city let's just call it um
+18:27
+you know cityville or something um so
+18:29
+cityville
+18:30
+uh has one percent of users that use
+18:33
+facebook lite
+18:34
+um majority of the users in that city
+18:37
+do have bandwidth constraints uh
+18:40
+how would you think about going about
+18:42
+expanding into that region or
+18:44
+you know allowing more user adoption um
+18:46
+you don't necessarily have to say like
+18:47
+what specifically you'll do but just
+18:48
+what questions would you ask and like
+18:50
+how would you think about that because
+18:52
+it seems like that's part of the core
+18:53
+strategy here um but i'd love to hear
+18:55
+maybe like the concrete steps that you
+18:57
+might take to
+18:58
+uh kind of like think about cityville
+19:01
+and how it plays under the facebook
+19:02
+ecosystem
+19:03
+got it got it and i think um like being
+19:06
+from
+19:07
+um the middle east i think some cities
+19:10
+have seen some
+19:11
+um strategies done by facebook on this
+19:14
+um on this thing
+19:15
+and i think that's more or less like a
+19:17
+universal strategy that can be
+19:19
+um tailored to two regions so i think
+19:22
+i've seen two strategies that i think
+19:24
+they are brilliant and i would
+19:26
+definitely
+19:26
+do them as well um one is
+19:30
+um partnering up with um like
+19:33
+manufacturers of phones
+19:35
+um so basically you have facebook lite
+19:37
+pre-installed
+19:39
+i think that removes a lot of the
+19:40
+friction and it makes discoverability a
+19:43
+lot easier
+19:44
+so you buy a new phone and then you have
+19:46
+facebook lite already installed
+19:48
+so that's a lot easier from going and
+19:50
+downloading and figuring it out
+19:52
+the other thing is a partnership with
+19:56
+local telcos so i've seen this
+19:59
+in different cities and in different
+20:00
+areas where basically
+20:03
+telcos would would tell you that if you
+20:05
+use facebook lite then it won't
+20:07
+be um calculated against your overall
+20:10
+internet code
+20:11
+so that gives you another motivation and
+20:15
+that's like advertisement plus
+20:17
+motivation to actually
+20:19
+go and explore facebook live and and use
+20:21
+that and
+20:22
+engage more with the app the more you
+20:24
+engage i think
+20:26
+pretty much you'll have more friends who
+20:27
+are trying to get on board as well
+20:30
+and um that's a win-win for telcos and
+20:32
+that's
+20:33
+for facebook as well got it um that's
+20:35
+great yeah
+20:36
+uh it sounds like the partnerships are
+20:38
+really key there with the manufacturers
+20:39
+and the telcos and that might be part of
+20:41
+your
+20:41
+your strategy when you actually kind of
+20:43
+implement this goal
+20:45
+um okay albert is there anything else
+20:47
+that you think would be important to
+20:48
+share about this interview question
+20:49
+before we move on to feedback and
+20:51
+talk a little bit about how it went yeah
+20:53
+i think um
+20:54
+there is one point that i wanted to also
+20:56
+mention that i wrote down
+20:57
+um and that is the overall trade-off and
+21:01
+um the the basically the example that i
+21:04
+mentioned where
+21:04
+someone with a powerful phone might
+21:06
+install this facebook light
+21:08
+i think that's that's something that um
+21:11
+that
+21:12
+could uh potentially uh pose a threat
+21:14
+here in terms of like
+21:16
+cannibalization um so
+21:20
+we might have people migrating from the
+21:23
+normal facebook app to facebook light
+21:25
+and that could signal a problem that we
+21:28
+we need to
+21:28
+to measure first and then ideally we
+21:31
+want to understand
+21:32
+what's driving that behavior if that
+21:34
+happens so if we
+21:36
+over sell facebook light maybe
+21:39
+more people would actually start using
+21:41
+it that wouldn't have
+21:43
+the ultimate facebook experience a
+21:46
+b it might have less um
+21:49
+i don't know maybe like um advertising
+21:52
+potential or
+21:53
+a monetization potential um so it's it's
+21:56
+really
+21:57
+um a a very sensitive thing that
+22:00
+face that like i as the pm of facebook
+22:03
+lite need to figure out with the rest of
+22:05
+the company
+22:06
+with the rest of the pms on the normal
+22:08
+facebook app to figure out
+22:10
+what's what's our strategy in terms of
+22:12
+like do we
+22:13
+go full in on facebook like how would we
+22:15
+um
+22:16
+handle those situations where you have
+22:18
+someone who's on facebook light and you
+22:20
+want to
+22:20
+push them to normal facebook app so i
+22:23
+think there is a lot of
+22:24
+um trade-offs that we need to make here
+22:26
+and to ensure that
+22:28
+the overall ltv or the overall
+22:30
+experience for our customers it's
+22:31
+at at its best yeah that makes a lot of
+22:35
+sense and it
+22:36
+it sounds like you might be watching
+22:37
+that metric as the expansion
+22:39
+occurs like as you bring more users on
+22:41
+you might be watching that ltv metric or
+22:42
+you might be watching
+22:43
+to see the experience of the different
+22:45
+sets of users to make sure that that
+22:47
+doesn't happen
+22:48
+um cool well abid uh thanks so much for
+22:51
+doing this interview we can kind of take
+22:52
+the interviewer hat off and
+22:54
+i want to just first off hear from you
+22:56
+in your own words like how do you think
+22:57
+that went
+22:58
+um a little bit of self-reflection on
+23:00
+the interview and then i can share my
+23:02
+feedback as well and
+23:03
+again for those watching do please like
+23:05
+and subscribe if you thought that this
+23:06
+video was helpful or valuable to you
+23:08
+it was an amazing conversation and
+23:12
+i think it went really smooth however i
+23:15
+wish as an interviewee i had
+23:17
+more structure to kind of like
+23:20
+anticipate the questions that you will
+23:22
+raise and address them in my answers
+23:25
+um this way i sound more prepared and
+23:28
+kind of like thought through
+23:30
+um one thing that i felt i didn't do a
+23:33
+lot is that
+23:34
+i did not pose and and really think
+23:36
+strategically about the questions
+23:39
+i i was maybe a little bit
+23:42
+too excited to hear this problem because
+23:45
+i i feel it's
+23:45
+it's a relevant problem for me and then
+23:48
+i was giving answers very quickly
+23:50
+i think one advice um is to slow down
+23:53
+and take notes and
+23:55
+structure my answers in a proper way
+23:59
+um god i mean all great points and uh
+24:01
+yeah i think pausing is one of the
+24:03
+things that feels
+24:04
+so unnatural but it's so so important
+24:05
+for interviews and i tell everyone
+24:08
+uh that you can totally pause it's okay
+24:10
+to pause and it's not a problem
+24:12
+um so i i wanted to run through some of
+Interview analysis
+24:14
+the notes that i wrote down that i
+24:15
+thought were really effective about what
+24:17
+you did
+24:18
+um you started with the mission it was
+24:19
+really fantastic the way you started you
+24:21
+were saying like you know
+24:22
+facebook is about inclusivity and that's
+24:24
+why this is part of our product
+24:25
+experience
+24:26
+and now we're going to bubble down to
+24:27
+here and i even asked you kind of a
+24:28
+tough follow-up on bump and newspaper
+24:30
+stuff and i think you handled that
+24:31
+really well
+24:32
+um i will say like at some points in the
+24:34
+middle i started
+24:35
+starting to get lost in terms of the
+24:37
+structure or in terms of like what
+24:39
+exactly is the goal or what exactly is
+24:40
+your justification for that goal
+24:42
+um and are there multiple goals or are
+24:44
+there not multiple goals and it just
+24:45
+helps to kind of set up front and say
+24:47
+like hey this is my goal this is the one
+24:49
+goal that i think we should focus on
+24:50
+um or these are the two goals that i
+24:52
+think we should focus on things like
+24:53
+that
+24:54
+um and then i think uh you also did a
+24:56
+really good job of kind of like
+24:57
+talking through all the different
+24:59
+experiences and uh
+25:01
+experiences that you had so i thought
+25:03
+there was towards the end we had a
+25:04
+really great
+25:05
+example of like hey you know from where
+25:07
+i'm from like this is some things that
+25:08
+i've seen that were effective
+25:10
+um and i thought it was helpful to bring
+25:12
+in that knowledge and bring that
+25:13
+expertise and
+25:14
+show that you are thoughtful about
+25:15
+products um you know if we had more time
+25:17
+i would even encourage you to double
+25:18
+down even more on that and say like
+25:20
+this is what i thought was effective
+25:21
+about telcos versus manufacturers you
+25:24
+know
+25:24
+telling me something a little more
+25:25
+interesting or a little more in-depth
+25:26
+that leverages your
+25:28
+knowledge could be really really
+25:29
+effective um and then another tactic
+25:31
+that i thought you did that was very
+25:32
+effective is that you
+25:33
+assumed that much product was mature and
+25:36
+you used that as kind of like a
+25:37
+justification for the product decisions
+25:39
+that you were using
+25:40
+and i think that makes sense because
+25:41
+honestly you're going to have to pick
+25:42
+something and
+25:43
+kind of like making that assumption seem
+25:45
+like a reasonable one given that
+25:46
+facebook light has been around for quite
+25:47
+a while
+25:48
+um so i thought that was a pretty
+25:49
+effective approach as well
+25:51
+um and i did ask um a lot of follow-up
+25:54
+questions in this one so i do want to
+25:55
+acknowledge both for you and for the
+25:56
+viewers that
+25:57
+um this is uh more of a conversational
+25:59
+type of interview and these can
+26:01
+totally happen in interviews it's a
+26:02
+little hard to tell sometimes the
+26:03
+interviewer will give you a lot of space
+26:05
+to talk
+26:05
+sometimes the interviewer will keep kind
+26:07
+of pushing you and pushing around and
+26:09
+trying to see if you
+26:10
+uh can handle some of the follow-up
+26:12
+questions and so i think you did a
+26:14
+really effective job uh
+26:15
+keeping your calm and answering those
+26:16
+follow-up questions and navigating
+26:18
+through that interview
+26:19
+um any reactions thoughts or comments to
+26:22
+what i just shared
+26:23
+no no 100 i think um you're absolutely
+26:26
+right
+26:27
+i think in my experience as you
+26:29
+mentioned probably
+26:30
+i'm in my experience i had both types of
+26:32
+interviews i had the
+26:34
+conversational interview where it felt
+26:36
+like i'm just chatting
+26:38
+with a friend who's like super
+26:40
+interested in this technology and we're
+26:41
+just like kind of
+26:42
+thinking about it like like someone has
+26:44
+appeared in my company
+26:46
+and it actually went great and sometimes
+26:49
+you need the structure
+26:50
+so it depends um and i think yeah both
+26:53
+could happen
+26:54
+well thanks everyone for watching thank
+26:56
+you so much abit for being on the show
+26:58
+again for those of you who want more
+26:59
+content like this visit try exponent dot
+27:01
+com
+27:02
+um and good luck on your upcoming
+27:04
+interview
+27:06
+[Music]

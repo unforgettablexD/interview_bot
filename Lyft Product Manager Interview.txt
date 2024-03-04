@@ -1,0 +1,611 @@
+and we're going to be doing a mock pm interview focused on an execution style question focused on lift
+0:07
+lift cancels are up five percent what is going on
+0:14
+hey everyone i'm here today with hadar uh hadar before we jump into this question could you tell us a little bit more about yourself
+0:20
+yeah hey um so my name is uh i uh just recently quit lift uh but i was working there for uh
+0:26
+something like two and a half or three years uh as a pm uh focused on a bunch of different stuff uh some driver onboarding some
+0:32
+regulatory policy uh towards the end on uh creating new products for our writers and on the cancellations policy uh for for the ride
+0:39
+sharing uh product uh before that uh as a pm postmates and a non-profit called kiva and then did some startup
+0:46
+stuff for a while before that awesome well we're super excited to have you and today as i mentioned we're going
+0:52
+to be doing an execution style interview question uh for this question i want you to
+Question
+0:57
+imagine that you are working at lyft which uh you're very familiar with um lift cancels are up five percent
+1:05
+what is going on what's the problem here uh is what we're going to explore throughout this interview question okay
+1:11
+um sounds good so what i'd love for you to do is to come up with hypotheses as to what's going on for the purpose of
+1:17
+this exercise we're going to do a little bit of a role play where i will be a data scientist and you can imagine that i
+1:23
+have access to tons of data and i can tell you answers to everything however um unfortunately i'm a very
+1:30
+terse data scientist and i only answer in yes or no questions um so i can't tell you anything more other
+1:35
+than just yes or no um but you can feel free to ask me questions to understand and diagnose the
+1:41
+issue um again the issue is that lift cancel rates are up five percent
+1:47
+okay yeah that all sounds good um cool so this is a starting point you want to make sure i clarify and like
+Clarifying questions
+1:52
+have the the prompt right uh so i'm a pm at lift uh i'm on the cancel side let's say
+1:58
+cancels are up uh five percent which obviously is not a good thing i want to see why that happened uh and then uh you have like a magical
+2:04
+dashboard and i can ask you whatever question uh you'll only give me like yes or no answers have to be pretty precise like what things i ask you right
+2:11
+yes um cool okay and just make sure i understand how we're defining cancels um so first question
+2:16
+um is this like are we talking like writer versus driver cancels or like is like the admins like
+2:23
+the system behind the scenes cancelling i guess yes there are no questions is this driver uh cancels
+2:29
+yes it is driver cancels yes okay so judge to make sure our writer cancels uh different in any
+2:35
+way or is it jessalyn driver inside no we're not seeing a different deviation and writer cancels okay got it got it um has the way that
+2:43
+we uh define the metric change in all like as an example like maybe the way we used to define it is
+2:48
+uh you know you requested the ride already um and the driver was like dispatched
+2:54
+and then you like the writer cancels the ride that's like the driver cancels the ride uh at some point um
+2:59
+let's say that that's the definition uh as an assumption like has this changed since before that the increase happened yeah
+3:06
+good question we haven't changed the definitions of metrics uh in the past in the time frame that's relevant for
+3:12
+this question okay uh and uh are we like logging it differently like
+3:17
+have you switched like you know from redshift to hive or like anything like that um we have implemented a lot of changes
+3:24
+recently um i'm a data scientist so i don't know exactly the the changes that we've invented um but
+3:30
+yeah there's been some changes to our system our instrumentation and things like that i'm not sure whether or
+3:36
+not that's applicable here though okay sounds good uh yeah so i mean maybe i'll try some other stuff for a while
+3:41
+and if we aren't really getting anywhere then we can come back to uh instrumentation and see if there's like a technical problem
+3:46
+with that um that's okay with you yeah that sounds good cool okay so i think we have a good sense of
+Answer
+3:52
+like what we're talking about it's like drivers are canceling uh we haven't changed the definition of driver cancels at all
+3:57
+maybe the metrics are being logged differently but sounds like that's like i don't know maybe it's like a routine thing that hasn't had much of an impact
+4:02
+who knows we can come back to it um typically when i want to like find the root cause behind this sort of thing
+4:07
+i like to break it down into different types of like categories in which things might go wrong a couple that come to mind right now and
+4:13
+we can maybe think of more later are uh like what's going on like in the physical world that people are in like using the product it's like kind of
+4:18
+marketplace specific stuff uh maybe there's some technical uh you know ways to slice and dice the data
+4:24
+that will help us to find the uh the segment that's experiencing this more if such a thing exists uh maybe there's like user specific
+4:30
+issues or like competitive issues those are maybe like the four that i'll touch upon um to sound okay
+4:35
+yep that sounds great thanks for the breakdown yeah sure um so let's start with uh marketplace so um
+Factors
+4:41
+this is stuff like seasonality like maybe time location or something so this is as a starting point um has this
+4:48
+change uh did this did this change happen uh like gradually like decreased over time
+4:54
+into what is now like cancelling up five percent or so like a stark like it used to be like the normal
+5:00
+amount and all of a sudden it's up five percent like within a day or something um yeah so you're asking about the
+5:06
+to clarify you're asking about the time duration of the change is that right yeah or i suppose
+5:13
+like uh did the so cancels are up five percent uh from some point in the past uh was that
+5:18
+point in the past uh like very recent it's like a stark change or has it been kind of gradually uh
+5:24
+increasing up until where we are at now it's a relatively stark change so it looks like there's been
+5:30
+something happening within the past maybe a couple of weeks that have caused it to change
+5:36
+um it's not like a slow change yeah great question yeah that makes sense like something fundamentally is different about the product the
+5:41
+marketplace something and it like just made like a step change that that makes sense uh cool is it a
+5:47
+regional at all like are we seeing like certain countries or cities uh that you know disproportionately have an increase
+5:53
+in cancels or is it like kind of uniformly up across the whole platform um we're seeing it focus
+5:58
+generally in domestic areas but we're not seeing a huge uh it's not like it's only in the
+6:04
+domestic areas we're seeing a little bit more in the domestic region got it okay yeah so maybe like there's
+6:10
+like a specific city or like a state in america or something but it's like kind of across the board right okay that makes sense um cool
+6:17
+and i guess you said it was a star change is there any like holiday or something like uh i don't
+6:22
+know is that like a big like you know uh countrywide holiday or like a parade
+6:28
+i guess parade would be like city specific but it's like it's like a national holiday i guess um i'm actually just a data scientist
+6:34
+i'm not totally sure what holidays are coming up is there a way that i can look up something for you that would help you
+6:40
+determine if there's a holiday um yeah i mean maybe like if you just had like a you know a magical calendar of uh
+6:47
+holidays sure so i can look at my magical calendar or maybe i'll look at kind of a database or something and
+6:53
+check and cross-reference if there's any holidays um there's a couple esoteric holidays like uh maybe national
+7:00
+pancakes day but i'm not totally sure how applicable that is for the question that we're having today
+7:05
+yeah okay you should probably partner with ihop but uh i guess otherwise it doesn't sound like it has had much of an impact
+7:10
+um okay cool so um maybe nothing around holidays um i'm gonna skip forward uh a different uh category now let's talk about maybe
+7:17
+uh like technical uh you know potential problems um is this so i think lifts only on ios and android
+7:23
+right maybe there's like a mobile product as well uh but like broadly is there like a specific platform in which we're seeing this happen more
+7:30
+great question we're not seeing a deviation in the platform usage generally like we
+7:35
+we have certain platforms that are used more than others but um the norm when you normalize to the
+7:41
+amount that they are being used it doesn't show any deviation and pattern so yeah it doesn't look like there's any
+7:48
+deviation between the two platforms or other got it okay all right that makes sense and uh
+7:53
+we'll get to like user behavior type stuff later but um since we're talking about driver cancels i think uh you know probably not
+8:00
+worth thinking too much like the passenger app uh at least quite yet but on the driver app uh i think i imagine there's like
+8:06
+different versions of the app and stuff like that right um if it's the same across all the platforms is there maybe like a
+8:11
+you know a version of the app that uh it's happening more on like some of the older versions for example or anything like that got it so you want
+8:18
+me to slice by the version number sort of of the app release that we've launched yeah it was like maybe
+8:23
+different across ios and android but like let's say like they're temporarily like tied somehow like is there like a
+8:28
+older version uh that's it's happening more on or something got it got it um yeah
+8:33
+so i'll look and i look into it um i'm not seeing a huge deviation in terms of
+8:38
+the uh the app version that the driver is on in terms of whether or not they're more
+8:45
+or less likely to be in that canceled set the set of five percent that are cancelling got it okay that makes sense
+8:51
+uh cool and then i guess this is maybe like half technical half user behavior stuff but is there any like experiment that we've
+8:58
+launched recently like as lift like uh i don't know something that like maybe could have broken something and
+9:03
+caused a bad experience that leads more cancels or i guess like any new experience that we've launched
+9:08
+yeah so um we did launch a experiment where we changed the color of our icon um the uber
+9:16
+the sorry the lift icon we changed the color of it recently um we're at 50 for that experiment
+9:23
+right now got it okay interesting um yeah i mean like intuitively doesn't feel to me like that would have
+9:30
+like a large cause like cancel i actually prefer to keep digging even though there's some idiosyncratic thing here um
+9:36
+if nothing else like fine you know yields like a bigger source of problems then uh
+9:41
+maybe be worth like doing some user research and asking drivers if the new color is uh somehow causing them to cancel more
+9:46
+often um if that sounds okay with you that sounds okay yeah um totally it well i guess just to
+9:52
+push back a little bit like is there a way that you would determine that we could determine whether or not the color change is causing
+9:58
+the cancellation like could we look at in the data to check that out yeah yeah that's a good point i guess uh
+10:04
+are there is a higher degree of cancels in uh either the variant or the control placement right right there's no there's
+10:10
+no deviation between the purple and the pink um we changed the purple so yeah no deviation there so yeah that's a good
+10:16
+call yeah easy easy to check don't even need to uh save you for later good good good call uh cool okay yeah so i guess that
+10:22
+was the only experiment though right there's no other experiments that yeah that was that was the main experiment we launched recently
+10:27
+okay uh and just to like kind of triple check here so i think we've talked mostly about that the example we gave at least was like a ui
+10:33
+uh experiment right anything in the back end like for example like uh the matching algorithm might be different somehow and like
+10:40
+matching drivers on the different criteria or anything happening there um we do launch stuff every week um
+10:46
+we haven't seen something so major though that we've launched uh in terms of the matching algorithm
+10:52
+and things like that that would be relevant to this particular problem yeah and i guess broadly uh you know back to
+10:58
+the point that you brought up earlier i guess we could just look hypothetically we could look at all the different experiments that are running and see if
+11:03
+uh the varying versus the control or if it's like multivariate like just compare all the different uh you know buckets of people and see if
+11:08
+there's any interesting cancels and it sounds like maybe there isn't um okay um i guess the last thing comes
+11:14
+to mind for technical uh any like connectivity issues of any sort uh that we're seeing in like
+11:19
+i guess this maybe it's like across the entire country since we already know it's not happening uh regionally yeah i guess what specifically would you
+11:25
+want me to look for in terms of connectivity could you be a little more precise about that yeah fair enough yeah i mean it's
+11:30
+actually getting more into like user behavior so maybe i'll just jump into that and this will be a part of it but uh one of the first things that i would
+11:36
+want to think about is like the funnel of like the experience here right so we have um you know
+11:42
+presumably like there's an app open uh on the rider and the driver's side uh the rider side which isn't a part of
+11:48
+this because the drivers are canceling uh but you know writer opens the app they set the destination
+11:54
+request a ride they like basically like that's it they can take to their destination on the driver's side which is maybe more
+11:59
+interesting here uh the driver uh you know opens up their app and starts a session uh loads content they like get requested
+12:04
+a ride they accept the ride and so forth right um maybe i'll just like save it there
+12:09
+and ask like is there a specific step in that funnel from like app open um all the way to completing uh
+12:16
+a ride uh that is like disproportionately uh happening yeah so you're asking for
+12:22
+in the various stages of the funnel when is the cancellation happening is that correct
+12:28
+uh yeah i mean i yeah i guess like it could only happen from when the driver uh accepts the ride
+12:36
+right right right um or i mean i guess one clarifying thing here is uh so presumably the driver gets asked if
+12:42
+they want a ride uh and they can like choose to accept it or not right um if they unless we're doing like auto
+12:48
+assigning but let's say like we're not at least in some cases um if a driver like doesn't accept a ride as i can as a cancel are we only
+12:54
+talking like after they accept uh we are talking about after they accept so that would be cancelled yeah
+13:01
+okay got it uh okay let's get into this a bit more later um
+13:06
+yeah i guess i just want to like close that loop on the connectivity side um or is the app like crashing at all
+13:12
+like i think that that's basically what i'm getting at is like is uh did the app i was saying like app crashes like uh
+13:17
+higher than normal yeah uh good question we're not seeing any app crashes higher than normal nor
+13:23
+are we seeing um bug reports reported by the app either so yeah we're not seeing like crashes or uh bug
+13:30
+report issues coming up right now okay okay yeah that makes sense um cool okay so now let's maybe go full on
+13:36
+into the user side um so i just want to wrap up the funnel thing so the driver accepted uh the ride
+13:44
+uh and this from this point onwards they you know might cancel uh are we seeing uh a disproportionate
+13:50
+amount of these like uh increased cancellations happening um i'll start like broad and i'll ask you
+13:56
+some specific questions i'm trying to think through like um from when you uh from the except the ride until when you're like at the
+14:02
+location like picking up the passenger uh you might cancel like kind of early on because of something or later on because of something
+14:08
+right um are we seeing any like clustering of cancels i guess is the question uh based on like the time between being
+14:16
+uh dispatched to arriving at the pickup location yeah we're seeing it more at the beginning of that experience
+14:22
+so the time duration would be more towards the front end of the of the ride of the of the driving to the
+14:28
+person yeah okay yeah that's that's interesting that's good to know um okay um has the uh
+14:36
+has the distance from the uh place where the driver was
+14:41
+dispatched and the destination that they're being or the pickup location they're being asked to drive towards has that distance
+14:48
+uh changed meaningfully recently is it like is it on average longer for example so i see what you're saying
+14:54
+like is the distance from the driver to the pickup point longer than normal is that what you're
+15:00
+asking yeah yeah i guess like just to take a step back for a second i'm trying to think through like uh because we're mostly focusing the
+15:05
+driver like is there anything from the driver's perspective that might uh disincentivize them to complete the ride and cause them to cancel got it um
+15:12
+and if i think about that just like just to wrap up this thought like at a high level like drivers care about uh like dollars per hour basically they
+15:18
+want to make money it's a job for them right um and to do that they have to do a lot of jobs per hour i think they're not getting paid hourly right so
+15:24
+uh i expect that uh you know they'd prefer to do shorter rides or shorter pickups at least um because i don't know like they
+15:30
+probably think they're doing more rides per hour i don't even know if they get paid for that pickup time so either way they probably want to uh to
+15:36
+do shorter pickups right so i guess the question is uh based on that right uh has that distance grown at all yeah uh good question so
+15:42
+based on that the distance has not grown no we are not seeing that the rides are substantially further away
+15:48
+than they were before okay got it uh and sorry distance and also time is the amount of time
+15:55
+as well yeah yeah okay cool yeah do you want to double double check that uh okay cool um let's see
+16:02
+um i don't know if we may have already covered this thing that comes to mind is like are there
+16:08
+more drivers lately like as a you know proportionately to the amount of riders like are we like oversupplied potentially but
+16:15
+there's you know so many drivers that um maybe they're frustrated because they're not getting as many rides or
+16:20
+something like that yeah we're not seeing a increase in supply of drivers but that's a great
+16:25
+question as well so yeah the this there shouldn't be there doesn't seem to be uh more or fewer riders or drivers on the
+16:32
+platform right okay now makes sense um let's see
+16:38
+um maybe one thing that comes to mind is
+16:45
+like a more macro thing um have you seen anything like in the news like any
+16:50
+public sentiment is like a strike or like uh i don't like delete uber a while back seem to be like a big thing for
+16:55
+them is like something maybe similar like bubbling up uh right now that we've seen in our data scientists but like
+17:01
+yeah totally yeah i can do a sentiment analysis on lyft as a company uh on some of the sites um we're not seeing a
+17:07
+deviation in the sentiment there so um it doesn't seem like there's something newsworthy that has come out
+17:12
+about lyft in the past uh few weeks okay that makes sense uh
+17:18
+and then maybe uh two yeah i think two more things that come to mind uh in users
+17:23
+and then i have some competitors stuff i want to ask about sure um but on the uh so it's a marketplace there's
+17:29
+like two sides and you have to coordinate stuff right uh are we seeing any difference in like the writer behavior like specifically as
+17:34
+an example uh because i presume cancers are happening before the writer arrives actually one thing to clarify um or no
+17:41
+you already said that it was happening near the dispatchers so presumably it's not happening when they're already there so right they couldn't interact physically
+17:48
+is there increase in like passengers calling drivers um nope uh no increase in
+17:53
+passengers calling drivers okay got it uh cool and last question uh maybe we could even start with this but
+17:59
+uh demographically like if you like segment out based on different types of drivers like age or uh i don't know uh any other
+18:07
+pii that we have on them or how old their vehicle is how tender they are on the platform right you can classify some different ways
+18:12
+are we seeing any like segment of drivers that are disfortunately canceling yeah good question um it's very slightly
+18:19
+skewed towards people who have been on the platform a little bit longer but that's it doesn't really seem to be
+18:24
+much of a pattern there okay got it uh cool so maybe like a little bit more on the tenured side
+18:31
+uh i think the the most interesting like thread to keep pulling on is it was happening like soon after they uh
+18:37
+were dispatched um so there's something to like maybe incentivize them even though they just
+18:43
+started to cancel they haven't invested too much yet and something more lucrative came up um so actually getting into competitive
+18:48
+stuff um so i mean hopefully we have a good amount of like competitive intelligence i think uber is like kind of the biggest
+18:53
+player especially if it's across the whole platform or across the whole nation rather there's other folks like uh like via and
+19:01
+juno and stuff but they're they're not really across most of the platforms so maybe just focus on uber i guess sure um
+19:06
+do we know if uber's uh i'm sure they've launched that all the time but do we know if they've launched anything uh fairly vigorously like a big product
+19:12
+announcement or anything like that they're launching stuff all the time um i look into this stuff and it does look
+19:18
+like they are doing an increase in types of some marketing campaigns that they're working on lately for drivers so we're seeing some
+19:25
+increase there with marketing campaigns okay that makes sense uh yeah i don't know like if we're
+19:31
+able to attribute uh like what marketing campaigns of uber a driver has gotten
+19:38
+and like and split like lyft drivers by that but i'd basically be curious like what types of marketing campaigns are sent out like is there something that's
+19:43
+incentivizing drivers to like you know spend more time on uber or like spend less time in lift explicitly like either one right um i guess first
+19:50
+question is like do we have a way of knowing if uh uh i think even lift the driver is
+19:55
+seeing a specific type of uh like marketing uh copy from uber um we we can't know
+20:02
+exactly like the copy itself but we can know if our drivers are using both apps based on some analytics
+20:10
+that we do on their usage and things like that um and so we we could also look into that and we could potentially look into
+20:16
+um the types of uh behaviors that we're seeing from those drivers and and how they might be using
+20:23
+different things but we do have some subset of users also that we can talk to that are just like a user research pool that we can always
+20:29
+communicate with as well okay okay yeah so maybe let's get into qual in a sec if we were able to do that with this exercise but
+20:35
+this is a starting point maybe the only thing that we can really pull on is uh like uber uh slash like uber plus lift
+20:41
+drivers just like just lift drivers uh if we split it based on uh drivers who are just on left versus drivers
+20:46
+who are on uber and lift um is there a difference in cancellations uh yep yeah we're seeing no cancellations
+20:52
+for the subset that are just on lift no no cancels at all or just like no
+20:57
+change or sorry no no deviation in that yeah okay that's cool
+21:03
+okay well i guess in that case then uh it must be something that's specific to uber um not to jump you know
+21:09
+to conclusions too quickly like maybe the people who drive for uber and lyft are uh like
+21:15
+predisposed to being like more savvy and uber's not even doing anything but they're just like picking and choosing between rides like
+21:21
+it could just be naturally the case for switchers uh but maybe if we get some qual do we know
+21:28
+if like uber is like incentivizing them at all to you know pick their rides over lift like usual so we talked to our quality
+21:35
+and we talked to some folks about who used both uber and lyft and we've noticed that there are some
+21:40
+campaigns being sent via notification that encourage drivers to cancel lift rides and pick up
+21:46
+uber rides that have more monetary value so uber is kind of providing even more financial incentive to have
+21:53
+drivers use their rides as opposed to the lift rides and they seem to be um often sometimes correlated with a
+22:00
+ride that just got picked up so uber seems to be picking moments when the driver has left the uber app and
+22:06
+gone to the lyft app got it okay um i guess we found it that sounds like that
+22:11
+yeah okay great job um well i mean now that you found it just like maybe a quick follow-up question and we don't
+Follow-up questions
+22:17
+have to spend too much time on this but just imagine imagine that you are
+22:22
+like the pm for lyft right now and um you work on cancels and you're noticing
+22:28
+this trend and now you know what the issue is so there's some kind of competitive marketing campaign that's causing drivers to cancel more often
+22:35
+um what how maybe very briefly like how would you think about that problem and what steps would you take yeah uh
+22:43
+just make sure i got that right so uh i'm a pm on lift it's like cancels related still uh sorry you're saying uh somebody on my
+22:50
+team is suggesting that we change the policy uh um it's just more like what should what should we do like um in
+22:57
+response to this like this competitive campaign via from okay okay
+23:02
+yeah so so it's not even okay it's not canceled policy sorry so it's uh so this competitive thing is happening uh what should we do um
+23:10
+it could involve trans changing the policy like that could be a thing that we employ but just holistically like what
+23:16
+would you what would you think about here yeah for sure um yeah so
+23:22
+you know let me show you grounded in like the goals of the company and the user uh i don't know if we like want to spend like you know a whole chunk of time
+23:28
+there but yeah just a brief i'd say yeah yeah let's say like high level uh since i get there is uh you know it's bad if we're
+23:36
+canceling rides a lot that makes the platform so reliable for uh writers um lyft overall wants to be like
+23:41
+a reliable uh transportation option like it's kind of like a high level like goal or mission for the company um so cancels are bad we want to
+23:48
+minimize those uh well at the same time you don't want to like be uh you know we want to we want to
+23:54
+incentivize drivers to be on the platform and make sure that they i think what they mostly care about is getting paid but also having a good
+24:00
+experience uh so we probably want to make sure that they're getting paid commensurate with like the market rate for driving um
+24:06
+right so if they're getting paid more on uber should consider maybe um paying them more like increasing incentives to match uh another option
+24:13
+is uh i don't know if that's like financially affordable we could dig into that theory but
+24:18
+that would be like obviously a big consideration if we wanted to start doing that but otherwise we could incentivize them to like not cancel by changing the
+24:25
+policy um maybe you like get a warning and then eventually banned from the platform if you cancel too often or something so you
+24:30
+have to commit if you are to accept the right um the only concern there is uh let's say like we extrapolate that like in it
+24:35
+you know we do that and drivers still want to cancel uh they might just like stop driving for lift and like retention might get hit on
+24:41
+the driver's side uh so i probably run a couple of tests maybe um try a couple of tests that uh either like uh match uh
+24:49
+incentives with uber and like we can you know probably figure out like on the ops side like uh what they're charging
+24:54
+and like kind of match um and you can stretch that separate experiment where we uh maybe like threaten uh you know
+25:00
+threatens kind of a strong word but uh warned the driver uh you know if they commit to a ride and then they cancel it
+25:06
+after you know already committing to doing the ride um that it might uh compromise their ability to be on the platform um and
+25:12
+just like see how that affects uh like immediate uh you know fulfillment rate of requested rides uh but also like the
+25:18
+longer term driver attention side got it awesome um well i i know we're a little short on time so i want to wrap
+25:24
+up there and get some feedback but overall um awesome answer radar as always um would love to
+Interview analysis
+25:30
+hear from you a little bit of self-reflection about how that went for you and then i can jump into some of my notes and then we can rap
+25:36
+yeah for sure uh yeah i think um you know it's this is one of those
+25:42
+questions where i feel like there's always like unknown unknowns where like maybe there's another category that i could have split it by that i didn't think of
+25:47
+um like i know like yeah there's some other way to cut it that like didn't come to mind so maybe i missed something there
+25:52
+nothing comes to mind right now but i you know that totally could be the case uh i think with uh the experiment uh
+25:58
+stuff that that was like and we you know resolved it together like in line but um it would have been easy to
+26:03
+check the variance of control that was definitely a miss on my side to not you know proactively mention that um and the only other thing is uh well i
+26:10
+think that well my interpretation of the point of this exercise uh is to see how someone like
+26:15
+analytically breaks down like possible root causes and it's more like an execution thing versus like a product sense thing um but like it's
+26:21
+always always helpful to ground why we're saying what we're saying in like the user value or like the user
+26:27
+perspective which i was trying to do at least with like the you know funnel for example or talking about like what my incentivized drivers to cancel uh
+26:33
+but i'm sure it could have done more of that in certain boards totally yeah um i'm great points and i
+26:38
+thought you did a really great job of breaking it down and yeah like for for those watching like this type of interview question is a
+26:44
+very different type than a lot of interview questions it's an execution style one where there's a lot of back and forth with the
+26:49
+interviewer and they can be very fun but it can also be very infuriating if you keep hearing no and like keep wanting to know how to answer the
+26:56
+question correctly and so i think you did a great job also just keeping up faith you know that you'll get to it eventually even though
+27:02
+i was saying no to a lot of the directions you're going in um because the point of this interview question isn't getting to the right answer but
+27:07
+it's showing that you can think through the process and showing that you can think through each piece holistically
+27:13
+um so a couple points that i i thought were really great where even though you were shooting in the
+27:18
+dark you're doing options i always knew your high level meta goal like i could hear your thought process
+27:24
+throughout the process so one thing that i see that's not so great with some of these interview questions is that when people
+27:30
+just kind of be like oh was it in like this country like was it um with this user and i don't hear sort
+27:36
+of the high level thought process whereas with you i had that top meta part where it was like okay i'm gonna go into this section first
+27:42
+and then okay it might be promising but let me go over here first then i can come back to that if i need to some of that like a thought process was
+27:49
+really really helpful it was a great map of where you were going um i thought also
+27:54
+um we had some you know fun discussions around like different little paths we went down like the holidays thing was kind of interesting
+27:59
+i think yeah the other piece for that i would just say is that you know in an interview just being precise is helpful so like um sometimes i've had
+28:06
+these questions where the interviewer just says like oh like i don't know what a holiday is like i'm just like tell me what i should do
+28:14
+and then you have to almost code it for them like okay i go look at the corpus and like go find the holiday thing and then do that
+28:19
+so i think that's that's one point and then yeah like comprehensive i thought it was very comprehensive you went through
+28:24
+almost every option um and then when we got to the end i think you did a great job of kind of being like aha like we got something
+28:31
+what's like let's use this let's jump into it and then go there and then you you did a great job summarizing
+28:36
+and then even the follow-up question i loved how you brought it back to the goals which is always really helpful um so yeah great
+28:43
+great answer any any reactions to anything i just said or comments uh yeah i think i mean all that makes
+28:48
+sense um yeah i think the the like precision and uh explicitness
+28:54
+of uh like what i'm asking is is that's an important thing uh the holiday is a good example of that
+28:59
+um yeah i think just like stepping out of like being the interviewee because i've written this interview myself when i was working with a lot
+29:05
+i think like two quick thoughts uh that i would even add to this is uh and this is maybe more of like what the like what's going on in the interviewer's head like
+29:11
+while you're interviewing is uh like definitely don't be frustrated i i for example when i ask this question
+29:16
+i'll have a root cause and if the candidate like gets to it quickly actually just change the root cause it's like
+29:21
+a little like a secret for you know anyone watching but um the point is not to get to the answer right like if you're getting a bunch of
+29:27
+notes it's actually probably a good sign so long as you're like structuredly uh you know going through everything
+29:32
+um so that was one thing another thought that i may have forgotten um yeah that's it
+29:39
+okay well um we can always uh follow up after if you think of it afterwards um but
+29:45
+uh thank you again so much hadar for being on the show this is super valuable you did a great job interviewing um and
+29:52
+i think uh folks learned a lot about execution-style questions and uh being a list product manager
+29:57
+if people have any other ideas or thoughts or edge cases that they can think of that
+30:02
+they would have asked in this question do comment below we'd love to see comments and your thoughts on it um but otherwise
+30:09
+good luck on your upcoming interview and thank you hadar for being on the show yeah thanks all right
+30:23
+you
